@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 class="text-center">Formulario</h1>
+        
+        <form class="row g-3 needs-validation" novalidate>
+        
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" value="Seu Nome" required>
+            </div>
+            
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" value="Seu Sobrenome" required>
+            </div>
+            
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input required type="email" class="form-control" id="email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input required type="password" class="form-control" id="senha">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Cidade</label>
+                    <input required type="text" class="form-control" id="cidade" required>
+                    
+                <div class="col-md-3">
+                    <label id="stateLabel" for="validationCustom04" class="form-label">Estado</label>
+                    <select class="form-select" id="estado" required>
+                        <option selected disabled value="" disable>Selecione uma opção...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+
+                    
+                </div>
+                <button type="Button" id="Button" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+
+    <div class="returnForm">
+        <p id="resposta"></p>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
